@@ -319,7 +319,7 @@ const Anatomy=[
 	},
 	{
 		id:197,
-		imgsrc:i192,
+		imgsrc:i198,
 		title:"LIFE SIZE DIS-ARTICULATED SKELETON",
 		sname:"Life size Dis-articulated Skeleton –Fabricated but encourage students to learn the various bones of an adult human. It is visual aid for the instruction of anatomy to students, doctors, nurses or any one interested in human skeleton. This highly  accurate version  contains 200 bones of an adult human. Includes 3-part skull, right hand and right foot on wire-Imported\n\nSKU: HA07",
 		link:"HUMAN ANATOMY MODELS & CHARTS",

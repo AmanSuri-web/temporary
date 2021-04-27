@@ -137,7 +137,9 @@
 }
 .btnPos{
 	top:75%;
-	left:23%;
+	left :0%;
+	margin:0 auto;
+    display:block;
 }
 .ScrollText{
 	font-size: 15px;

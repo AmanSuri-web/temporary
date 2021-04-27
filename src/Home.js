@@ -159,7 +159,7 @@ And it started by late Sh. B.K.Suri, a true karamyogi, visionary and great phila
 				<p style={{color:'rgb(100,100,100)'}}>For All Your Scientific, Medical and Educational Product Needs</p>
 			</div>
 			<div className="btnPos" style={{padding:'100px',textAlign:'center',position: 'absolute'
-				, margin: '0',msTransform: 'translateY(-50%)',transform: 'translateY(-50%)',}}>
+				,msTransform: 'translateY(-50%)',transform: 'translateY(-50%)',}}>
 				<NavLink to="/contact" className='btn btn-white btn-        animate'>Click Here</NavLink>
 			</div>	
 		</div>
