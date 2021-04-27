@@ -12,7 +12,7 @@ import About from './About.js'
 import Contact from './Contact.js'
 import Home from './Home.js'
 import Error from './Error.js'
-import NavBar from './NavBar.js'
+import Navigation from './NavBar.js'
 import Products from './Products.js'
 import ProductDetails from './ProductDetails.js'
 import Footer from './Footer.js'
@@ -36,7 +36,7 @@ const App=()=>{
 	return (
 		<>
 		<Scroll showBelow={250}/>
-			 <NavBar/>
+			 <Navigation/>
 			 <ScrollToTop>
 				<Switch>
 					<Route exact path="/" component={Home}/>
