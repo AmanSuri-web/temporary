@@ -1,0 +1,13 @@
+*{margin: 0;padding: 0;box-sizing: border-box;font-family: 'Oswald';}
+
+.navbar{
+	background-color:white;
+}
+.navbar-brand{
+	font-size: 1.9rem;
+	color:#565387;
+}
+.navbar1 a{
+	font-size: 1.3rem;
+	text-transform: capitalize;
+}
