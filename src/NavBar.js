@@ -93,7 +93,7 @@ if(n==''){
           < NavLink  className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style={{color:'grey'}}>
             Certificates
           </ NavLink >
-          <ul className="dropdown-menu " aria-labelledby="navbarDropdown" style={{marginLeft:'-272px'}} >
+          <ul className="dropdown-menu certiDropDown" aria-labelledby="navbarDropdown" >
          
             <li>< NavLink   className="dropdown-item" to="/galaxy-env-manage-certificate"><span className='dropdown-item'>Galaxy Quality Management Certificate</span></ NavLink ></li>
             <li>< NavLink className="dropdown-item" to="/galaxy-quality-manage-certificate"><span className='dropdown-item'>Galaxy Environmental Management Certificate</span></ NavLink ></li>

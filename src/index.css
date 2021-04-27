@@ -35,7 +35,9 @@
 .homeText2{
 	font-size: 30px;
 }
-
+.certiDropDown{
+	margin-left:-272px !important;
+}
 
 .dropdown-item{
 	font-size: 15px !important;
@@ -139,6 +141,9 @@
 }
 .ScrollText{
 	font-size: 15px;
+}
+.certiDropDown{
+	margin-left: 0px !important;
 }
 }
 
