@@ -5,22 +5,59 @@
 .navbar{
 	background-color:white !important;
 }
+svg {
+  width: 100px;
+  height: 100px;
+}
+svg:hover {
+  fill: #3498db;
+}
 .navbar-brand{
 	font-size:30px !important;
-	color:#565387 !important;
+	color: #565387 !important;
+	font-weight: bolder !important;
+}
+.navbar-custom{
+  background-color: black !important;
+}
+.navbar-t{
+  background-color: transparent !important;
+}
+.navbar-brand2{
+	font-size:30px !important;
+	color: white !important;
 	font-weight: bolder !important;
 }
 .navbar a{
 	font-size: 1.3rem !important;
 	text-transform: capitalize !important;
 }
-
+.nav-link1{
+	color: white !important;
+}
+.menu_active1{
+	
+	font-weight: bold !important;
+	border-bottom: 1px solid white !important;
+}
 .menu_active{
 	
 	font-weight: bold !important;
 	border-bottom: 1px solid #565387 !important;
 }
+.login-dark form .form-control {
+  background:none;
+  
+  border-style:1px solid #282c31;
+  border-radius:5px;
+  box-shadow:none;
+  outline:none;
+  color:inherit;
+}
 .navbar-brand:hover{
+	color: #3498db !important;
+}
+.navbar-brand2:hover{
 	color: #3498db !important;
 }
 .navbar a:hover{
@@ -30,19 +67,66 @@
 	margin-left: auto !important;
 }
 .homeText{
-	font-size: 100px;
+	font-size: 80px;
 }
 .homeText2{
 	font-size: 30px;
 }
 .certiDropDown{
-	margin-left:-272px !important;
+	margin-left:-262px !important;
 }
 
+.searchIconHome {
+	margin-top: 5px;
+	margin-right: 5px;
+    color:white;
+    padding: theme.spacing(0, 2);
+    height: 100%;
+    position: absolute;
+    pointerEvents: none;
+    display: flex;
+    alignItems: center;
+    justifyContent: center;
+  }
+  .searchIconNormal {
+  	margin-top: 5px;
+    color:black;
+     padding: theme.spacing(0, 2);
+    height: 100%;
+    position: absolute;
+    pointerEvents: none;
+    display: flex;
+    alignItems: center;
+    justifyContent: center;
+  }
+  .navSearchField1{
+  	
+  }
+  .navSearchField{
+  	border-style: solid;
+  	border-width: 1px;
+  	border-radius: 5px;
+  	color:black;
+  }
+.dropdown-menu1 {     background-color: transparent !important; border-color: white !important; }
+.dropdown-menu2 {     background-color: white !important; border-color: black !important; }
+.dropdown-menu3 {     background-color: black !important; border-color: white !important;color:white; }
 .dropdown-item{
 	font-size: 15px !important;
-	background-color:white !important;
-	color:grey !important;
+	
+	
+	
+}
+.footerDisplay{
+	display: none;
+}
+.footerDisplay1{
+	
+
+}
+
+.svgColor{
+	fill:white;
 }
 .dropdown-item :hover{
 	color: #3498db !important;
@@ -51,6 +135,21 @@
 	left: 50%;
 	top: 40%;
 }
+.homeDiv{
+  	margin-top: max(300px,62vh);
+  }
+  .homeDiv2{
+  	margin-top: max(440px,86vh);
+  }
+  @media (max-height: :600px){
+    .homeText{
+  font-size: 60px;
+  color:red;
+}
+.homeText2{
+  font-size: 20px;
+}
+  }
 @media (max-width: 991px){
 	#header {
 		height: 80vh;
@@ -69,6 +168,23 @@
 		font-weight: bold !important;
 		border-bottom: none;
 	}
+	.homeDiv{
+  	margin-top: 50vh;
+  }
+  .homeDiv2{
+  	margin-top: 65vh;
+  }
+  .homeText{
+  	
+	font-size: 50px;
+}
+.homeText2{
+	font-size: 15px;
+}
+.btnPos{
+	left: 60%;
+	top: 40%;
+}
 }
 .site_container {
 	
@@ -122,7 +238,14 @@
 	width:300px;
 	
   }
+  .homeDiv{
+  	margin-top: 50vh;
+  }
+  .homeDiv2{
+  	margin-top: 70vh;
+  }
   .homeText{
+  	
 	font-size: 50px;
 }
 .homeText2{
@@ -137,15 +260,19 @@
 }
 .btnPos{
 	top:75%;
-	left :0%;
-	margin:0 auto;
+	align-items: center;
+	left:15%;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
     display:block;
 }
 .ScrollText{
+	margin-top: 50px;
 	font-size: 15px;
 }
 .certiDropDown{
-	margin-left: 0px !important;
+	
 }
 }
 
@@ -222,7 +349,7 @@
 	margin-left: 10px;
 	
 	border:none;
-	background-color:rgb(250,250,250);
+	background-color:none;
 	border-radius:50%;
 }
 .searchBtn1{
@@ -232,7 +359,7 @@
 	margin-left: 10px;
 	
 	border:none;
-	background-color:rgb(210,210,210);
+	background-color:none;
 	border-radius:50%;
 }
 .searchBtn1:hover{
@@ -247,12 +374,13 @@ input:focus {
 }
 .autocom-box li{
   list-style: none;
-  
+  background-color: white;
   
 }
 .autocom-box li:hover{
   background-color:  #efefef;
 }
+
 
 .card{
 	margin:6%;
@@ -276,16 +404,21 @@ input:focus {
 
 .bgImage{
 	background-image: url(./backgroundImage.jpg);
-	height: 90vh;
+
+	height: max(550px,100vh);
+  
   /* Full height */
   width: 100%;
-  
+  position: absolute;
+  top:0;
   background-size: cover;
   overflow: hidden;
+
   /* Center and scale the image nicely */
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat,repeat;
   
+  z-index: -1;
 }
 
 
@@ -444,3 +577,23 @@ input:focus {
 .carousel-control-prev-icon {
   color: black !important; 
 }
+
+
+.inner-addon { 
+    position: relative; 
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }

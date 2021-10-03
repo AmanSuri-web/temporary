@@ -50,12 +50,7 @@ const Products=(props)=>{
       }
     }
 		
-	for(var i=0;i<Sdata.length;i++){
-		if(Sdata[i].link=="Healthcare & Nutrition Products"){
-			console.log(Sdata[i])
-		}
-	}
-
+	
     
 	return (<>
 		<div className="my-5">

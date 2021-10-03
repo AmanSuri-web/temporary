@@ -1,5 +1,5 @@
 {
-  "homepage": "http://AmanSuri-web.github.io/galaxyinformatics",
+  "homepage": "https://galaxyscientificindia.in/",
   "name": "project",
   "version": "0.1.0",
   "private": true,
@@ -25,6 +25,7 @@
     "react-responsive-carousel": "^3.2.18",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.2",
+    "react-svg": "^13.0.4",
     "web-vitals": "^1.1.0"
   },
   "scripts": {

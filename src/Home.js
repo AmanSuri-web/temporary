@@ -22,35 +22,37 @@ import healthcare from './data/healthcare.jpg';
 import human from './data/human.jpg';
 import Slider from './AutoSlider/Slider.js'
 
-
+import Footer from './Footer.js'
 import $ from 'jquery';
 import 'bootstrap/dist/css/bootstrap.min.css';   
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
 import 'bootstrap';
-
+import Navigation from './NavBar.js'
 import Carousel from './Carousel.js'
 
 
 // render
-
-const Home=()=>{
+const year = new Date().getFullYear();
+const Home=(props)=>{
 	
 // Teach Autosuggest how to calculate suggestions for any given input value.
 
 	return (<>
 					
-					<div className="" style={{position:'relative'}}>
+					<div className="" style={{position:'absolute',top:'0',width:'100%'}}>
 					<div className='bgImage'>
+          
 							
-   									 <div style={{position: 'absolute',left: '50%',color:'white',textAlign:'center',alignItems:'center',
+              </div>
+   									 <div className="homeDiv" style={{position: 'absolute',left: '50%',color:'white',textAlign:'center',alignItems:'center',
             top: '50%',
-            transform: 'translate(-50%, -50%)'}}>
+            transform: 'translate(-50%, -50%)',zIndex: '-1'}}>
             <h1 className="homeText text-center">Galaxy Informatics</h1>
-            <h7 className="homeText2 text-center">We Provide Top Rated Medical & Hospital Surgical Products</h7>
+            <h7 className="homeText2 text-center">We Provide Top Rated Medical, Surgical & laboratory Products</h7>
             </div>
-            <div style={{position: 'absolute',left: '50%',color:'white',textAlign:'center',alignItems:'center',
+            <div className="homeDiv2" style={{position: 'absolute',left: '50%',color:'white',textAlign:'center',alignItems:'center',
             top: '70%',
-            transform: 'translate(-50%, -50%)'}}>
+            transform: 'translate(-50%, -50%)',zIndex: '-1'}}>
    									 <div className="containerScroll">
   <div className="chevron"></div>
   <div className="chevron"></div>
@@ -60,9 +62,10 @@ const Home=()=>{
 </div>
 </div>
 
+						
 							</div>
-							</div>
-						<h3 style={{textAlign:'center',marginTop:'30px'}}>PRODUCT CATEGORIES</h3>
+              <div style={{top:'max(600px,110%)',position:'absolute',zIndex: '-1'}}>
+						<h3 style={{textAlign:'center'}}>PRODUCT CATEGORIES</h3>
 						
 			
       
@@ -158,12 +161,15 @@ And it started by late Sh. B.K.Suri, a true karamyogi, visionary and great phila
 				<h1>CONTACT US</h1>
 				<p style={{color:'rgb(100,100,100)'}}>For All Your Scientific, Medical and Educational Product Needs</p>
 			</div>
-			<div className="btnPos" style={{padding:'100px',textAlign:'center',position: 'absolute'
+			<div className="btnPos text-center " style={{padding:'100px',textAlign:'center',position: 'absolute'
 				,msTransform: 'translateY(-50%)',transform: 'translateY(-50%)',}}>
 				<NavLink to="/contact" className='btn btn-white btn-        animate'>Click Here</NavLink>
 			</div>	
 		</div>
-		
+    <footer className=" bg-light text-center" style={{marginTop:'100px'}}>
+    <p>© {year} Galaxy Informatics</p>
+    </footer>
+		</div>
 		</>);
 }
 export default Home

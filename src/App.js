@@ -7,7 +7,7 @@ import '../node_modules/bootstrap/dist/js/bootstrap.js';
 import $ from 'jquery';
 import Popper from 'popper.js';
 import 'bootstrap';
-import {Route,Switch,NavLink} from "react-router-dom"
+import {Route,Switch,NavLink,useHistory,useLocation} from "react-router-dom"
 import About from './About.js'
 import Contact from './Contact.js'
 import Home from './Home.js'
@@ -33,13 +33,18 @@ const Name=()=>{
 }
 
 const App=()=>{
+
 	return (
 		<>
+		
 		<Scroll showBelow={250}/>
-			 <Navigation/>
+		
+	<Navigation/>
+			 
 			 <ScrollToTop>
 				<Switch>
 					<Route exact path="/" component={Home}/>
+
 					<Route exact path="/products:page" component={Products}/>
 					<Route exact path="/about" component={About}/>
 					<Route exact path="/contact" component={Contact}/>
@@ -58,7 +63,8 @@ const App=()=>{
 					
 				</Switch>
 				</ScrollToTop>
-				<Footer/>
+				<Footer  style={{bottom:'0%'}}/>
+				
 		</>
 		)
 }
